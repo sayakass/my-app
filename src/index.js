@@ -4,9 +4,30 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import logo512 from './asset/logo512.png';
+
+// import { Welcome, Greeting, PI } from './component/Welcome';
+// import Component from './component/Welcome';
+import Component, { Welcome, Greeting, PI } from './component/Welcome';
+
+function App1() {
+  return (
+    <div>
+      <Welcome />
+      <Greeting />
+      <Component />
+      {PI}
+      <img src={logo512} />
+      <img src="https://picsum.photos/200/300" />
+    </div>
+  );
+}
+
+console.log(PI);
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App1 />
   </React.StrictMode>,
   document.getElementById('root')
 );
