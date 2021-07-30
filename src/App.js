@@ -1,17 +1,15 @@
 import './App.css';
-import Hello from './component/Hello';
-import Header from './component/Header';
-import Footer from './component/Footer';
-import Menu from './component/Menu';
 
-function App() {
+function App(props) {
   return (
     <div>
-      <Header />
-      <Hello name="John" />
-      <Hello name="Jack" />
-      <Hello name="Jane" />
-      <Footer />
+      <h1>Hello My Friend</h1>
+      <ul>
+        Friend List
+        <li>John</li>
+        <li>Jack</li>
+        <li>Jen</li>
+      </ul>
     </div>
   );
 }
