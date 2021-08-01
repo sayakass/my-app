@@ -1,12 +1,13 @@
 import './App.css';
+import Button from './component/Button';
 
 function App() {
   return (
-    <div className="">
-      <button>+</button>
+    <div className="App">
+      <Button name="+" />
       <span>0</span>
-      <button>-</button>
-      <button>Reset</button>
+      <Button name="-" />
+      <Button name="Reset" />
     </div>
   );
 }
