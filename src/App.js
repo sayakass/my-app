@@ -1,4 +1,5 @@
 import './App.css';
+import Name from './component/Name';
 
 function App(props) {
   return (
@@ -6,9 +7,9 @@ function App(props) {
       <h1>Hello My Friend</h1>
       <ul>
         Friend List
-        <li>John</li>
-        <li>Jack</li>
-        <li>Jen</li>
+        <Name name="John" />
+        <Name name="Jack" />
+        <Name name="Jane" />
       </ul>
     </div>
   );
