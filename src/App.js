@@ -1,28 +1,11 @@
 import './App.css';
+import Select from './component/Select';
 
 function App() {
   return (
     <div className="App">
-      <p>
-        <label htmlFor="province">
-          Province: &nbsp;
-          <select id="province">
-            <option value="">- Select Province -</option>
-            <option value="Bangkok">Bangkok</option>
-            <option value="Nonthaburi">Nonthaburi</option>
-          </select>
-        </label>
-      </p>
-      <p>
-        <label htmlFor="district">
-          District: &nbsp;
-          <select id="district">
-            <option value="">- Select District -</option>
-            <option value="Bangkok">Pak kret</option>
-            <option value="Nonthaburi">Mueang Nonthaburi</option>
-          </select>
-        </label>
-      </p>
+      <Select htmlFor="Province" label="Province" value1="Bangkok" value2="Nonthaburi" />
+      <Select htmlFor="District" label="District" value1="Pak kret" value2="Mueang Nonthaburi" />
     </div>
   );
 }
